@@ -12,20 +12,38 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
-
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:visibility="gone" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/doctorappontment"/>
+    <Button
+        android:id="@+id/appont"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="doctorappointment"
+        android:text="Doctor Appointment ? click !!" />
 
     <Button
         android:id="@+id/docreg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="docreg"
+        android:layout_marginTop="120dp"
         android:text="Doctor? Register yourself!!" />
+    <Button
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="docreg"
+        android:text="Help !!" />
 
         <Button
             android:id="@+id/sign_out"
@@ -37,6 +55,7 @@
             android:text="@string/btn_sign_out"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
+
 
 
 

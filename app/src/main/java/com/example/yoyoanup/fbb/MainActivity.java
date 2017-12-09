@@ -95,8 +95,14 @@ public class MainActivity extends Activity {
 
 
     public void docreg(View view) {
-        Intent i=new Intent(MainActivity.this,doctorregistration.class);
-        startActivity(i);
+        Intent docreg=new Intent(MainActivity.this,doctorregistration.class);
+        startActivity(docreg);
+
+    }
+
+    public void doctorappointment(View view) {
+        Intent docapp=new Intent(MainActivity.this,doctorappointment.class);
+        startActivity(docapp);
 
     }
 }
